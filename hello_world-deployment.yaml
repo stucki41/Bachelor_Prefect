@@ -1,0 +1,43 @@
+###
+### A complete description of a Prefect Deployment for flow 'hello-world'
+###
+name: demo-deployment
+description: null
+version: 85af316ee881a0e7fac7b7399c8b95db
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+schedules: []
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: hello-world
+manifest_path: null
+storage: null
+path: /home/daniel/Documents/Airflow/Prefect
+entrypoint: hello.py:hello_world
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2024-03-13T11:11:47.905126+00:00'
+triggers: []
+enforce_parameter_schema: null
